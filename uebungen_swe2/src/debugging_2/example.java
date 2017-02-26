@@ -1,4 +1,4 @@
-package debugging;
+package debugging_2;
 
 
 public class example {
