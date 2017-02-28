@@ -1,4 +1,4 @@
-package debugging_2;
+package lecture01.debugger;
 
 
 public class example {
@@ -16,7 +16,7 @@ public class example {
         }
 
         
-
+       
         // Create the second array
         int lengthNumsOut = nums.length / 2; // error
         numsOut = new int[lengthNumsOut];

@@ -1,4 +1,4 @@
-package KISS_1;
+package KISS;
 
 public class test {
 
