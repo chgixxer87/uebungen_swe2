@@ -11,6 +11,8 @@ import java.util.Random;
  * the total score. The main method creates a random array, calls the method and prints the score.
  */
 public class CalculateScore {
+	
+	//teständerung für git
 
     public static void main(String[] args) {
         int numObjects = 6;
