@@ -1,0 +1,18 @@
+#splash{
+    
+    -fx-background-position: center center;
+    -fx-background-image: url("luck-1943416_960_720.jpg");
+    -fx-background-repeat: stretch;
+}
+
+.label{
+	-fx-font-size: 30px;
+	-fx-text-fill: #1e90ff; /*codierung von javaFX css reference guide...kann auch als blue angegeben werden */
+	-fx-font-weight: bold;
+}
+
+
+
+
+
+
