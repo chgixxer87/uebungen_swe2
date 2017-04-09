@@ -1,5 +1,6 @@
 package Bonus.Lotto.splashScreen;
 
+import java.util.LinkedList;
 import java.util.logging.FileHandler;
 import java.util.logging.Handler;
 import java.util.logging.Level;
@@ -7,6 +8,7 @@ import java.util.logging.Logger;
 
 import Bonus.Lotto.ServiceLocator;
 import Bonus.Lotto.abstractClasses.Model;
+import Bonus.Lotto.appClasses.Bets;
 import Bonus.Lotto.commonClasses.Configuration;
 import Bonus.Lotto.commonClasses.Translator;
 import javafx.concurrent.Task;
@@ -51,8 +53,8 @@ public class Splash_Model extends Model {
             String language = serviceLocator.getConfiguration().getOption("Language");
             serviceLocator.setTranslator(new Translator(language));
             this.updateProgress(5,  6);
-            
-            // ... more resources would go here...
+
+            serviceLocator.setBetList(new LinkedList <Bets>());
             this.updateProgress(6,  6);
 
             return null;

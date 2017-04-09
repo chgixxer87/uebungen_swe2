@@ -1,8 +1,8 @@
 package Bonus.Lotto;
 
-import Bonus.Lotto.appClasses.App_Controller;
+import Bonus.Lotto.appClasses.App_Controller_start;
 import Bonus.Lotto.appClasses.App_Model;
-import Bonus.Lotto.appClasses.App_View;
+import Bonus.Lotto.appClasses.App_View_start;
 import Bonus.Lotto.splashScreen.Splash_Controller;
 import Bonus.Lotto.splashScreen.Splash_Model;
 import Bonus.Lotto.splashScreen.Splash_View;
@@ -21,7 +21,7 @@ import javafx.stage.Stage;
 public class Lotto extends Application {
     private static Lotto mainProgram; // singleton
     private Splash_View splashView;
-    private App_View view;
+    private App_View_start view;
 
     private ServiceLocator serviceLocator; // resources, after initialization
 
@@ -95,8 +95,8 @@ public class Lotto extends Application {
         // can only be initialized now, because they may depend on the
         // resources initialized by the splash screen
         App_Model model = new App_Model();
-        view = new App_View(appStage, model);
-        new App_Controller(model, view);
+        view = new App_View_start(appStage, model);
+        new App_Controller_start(model, view);
 
         // Resources are now initialized
         serviceLocator = ServiceLocator.getServiceLocator();
@@ -108,6 +108,8 @@ public class Lotto extends Application {
 
         view.start();
     }
+    
+    
 
     /**
      * The stop method is the opposite of the start method. It provides an

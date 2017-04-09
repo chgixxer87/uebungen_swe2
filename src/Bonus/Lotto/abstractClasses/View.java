@@ -28,6 +28,14 @@ public abstract class View<M extends Model> {
         scene = create_GUI(); // Create all controls within "root"
         stage.setScene(scene);
     }
+    
+    protected View(Stage stage, M model, Scene scene) {
+        this.stage = stage;
+        this.model = model;
+        
+       
+        stage.setScene(scene);
+    }
 
     protected abstract Scene create_GUI();
 
